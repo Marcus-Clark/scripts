@@ -1,0 +1,23 @@
+### download 5.19.8 packages
+mkdir /tmp/kerneltemp
+cd cd /tmp/kerneltemp
+wget https://slackware.uk/cumulative/slackware64-current/slackware64/a/kernel-huge-5.19.8-x86_64-1.txz
+wget https://slackware.uk/cumulative/slackware64-current/slackware64/a/kernel-modules-5.19.8-x86_64-1.txz
+### extract it
+explodepkg kernel-huge-5.19.8-x86_64-1.txz
+explodepkg kernel-modules-5.19.8-x86_64-1.txz
+### be sure there are no refused files from precedent package
+rm -rf /lib/modules/5.19.8
+### install the modules
+mv lib/modules/5.19.8 /lib/modules
+### install the kernel image
+mv boot/vmlinuz-huge-5.19.8 /boot/vmlinuz-safe-5.19.8
+### now edit lilo.conf
+# vi /etc/lilo.conf
+### add
+# image = /boot/vmlinuz-safe-5.19.8
+# root = /dev/XXXX
+# label = Safe
+# read-only
+### run lilo
+# lilo -v

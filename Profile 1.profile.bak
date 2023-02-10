@@ -1,0 +1,9 @@
+[Appearance]
+BoldIntense=true
+ColorScheme=Linux
+Font=Hack,10,-1,7,50,0,0,0,0,0
+
+[General]
+Directory=/home/mec
+Name=Profile 1
+Parent=FALLBACK/
