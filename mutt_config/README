@@ -1,6 +1,0 @@
-https://www.makeuseof.com/install-configure-mutt-with-gmail-on-linux/
-
-mkdir -p ~/.mutt/cache/headers
-mkdir ~/.mutt/cache/bodies
-touch ~/.mutt/certificates
-touch ~/.mutt/muttrc

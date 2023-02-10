@@ -1,0 +1,16 @@
+set from = "marcus.e.clark@outlook.com"
+set realname = "Marcus Clark"
+# IMAP settings
+set imap_user = "marcus.e.clark@outlook.com"
+set imap_pass = "xxxxxxxxpassword"
+set ssl_starttls = yes
+# SMTP settings
+set smtp_url = "smtp://marcus.e.clark@outlook.com@outlook.office365.com:587"
+set smtp_pass = "xxxxxxxpassword"
+set ssl_starttls = yes
+set use_from = yes
+# Remote Gmail folders
+set folder = "imaps://outlook.office365.com:993"
+set spoolfile = "+INBOX"
+set postponed = "imaps://imap.marcus.e.clark@outlook.com/Drafts"
+set sort = "threads"    # organise inbox into threads ie link replies
